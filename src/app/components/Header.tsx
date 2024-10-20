@@ -2,6 +2,8 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import Image from 'next/image'
+import Logo from '../assets/images/cktv_logo.jpeg'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,8 +11,11 @@ export default function Header() {
   const navItems = [
     { name: 'Home', href: '/' },
     { name: 'News', href: '/news' },
-    { name: 'Live TV', href: '/live' },
-    { name: 'About Us', href: '/about' },
+    // { name: 'Live TV', href: '/live' },
+    { name: 'Gallery', href: '/gallery' },
+    { name: 'Contact Us', href: '/contact-us' },
+    { name: 'About Us', href: '/about-us' },
+
   ];
 
   return (
@@ -18,7 +23,7 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           <Link href="/" className="flex items-center">
-            <img src="/logo.png" alt="CKTV India Logo" className="h-12 w-auto mr-3" />
+            <Image src={Logo.src} alt="CKTV India Logo" width={60} height={60} className="mr-3" />
             <div>
               <h1 className="text-2xl font-bold">CKTV India</h1>
               <p className="text-sm">Your Trusted News Source</p>

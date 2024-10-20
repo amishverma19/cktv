@@ -9,9 +9,9 @@ export default function Navigation() {
   ];
 
   return (
-    <nav className="bg-secondary py-2">
+    <nav className="bg-secondary py-2 md:flex hidden">
       <div className="container mx-auto px-4">
-        <ul className="flex flex-wrap justify-center gap-4">
+        <ul className="flex flex-wrap justify-center gap-6">
           {navItems.map((item) => (
             <li key={item}>
               <a href={`#${item.toLowerCase().replace(/\s+/g, '-')}`} className="text-white hover:text-accent transition-colors">
