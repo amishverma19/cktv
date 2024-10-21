@@ -24,6 +24,7 @@ export default function Footer() {
           <div className="w-full md:w-1/3 mb-6 md:mb-0">
             <h3 className="text-xl font-bold mb-2">CKTV India</h3>
             <p className="text-sm">Your Trusted News Source</p>
+            <Link target='_blank' href="https://ygsd.in">Developed by ygsd.in</Link>
           </div>
           <div className="w-full md:w-1/3 mb-6 md:mb-0">
             <h4 className="text-lg font-semibold mb-2">Quick Links</h4>
